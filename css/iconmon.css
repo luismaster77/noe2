@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/media/fontsNoe/icomoon.eot');
+  src:  url('/media/fontsNoe/icomoon.eot') format('embedded-opentype'),
+    url('/media/fontsNoe/icomoon.ttf') format('truetype'),
+    url('/media/fontsNoe/icomoon.woff') format('woff'),
+    url('/media/fontsNoe/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;  
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dots-three-vertical:before {
+  content: "\e916";
+}
+.icon-dots-horizontal-triple:before {
+  content: "\e915";
+}
+.icon-user-circle-o:before {
+  content: "\e917";
+}
+.icon-user-circle-o1:before {
+  content: "\e914";
+}
+.icon-truck:before {
+  content: "\e910";
+}
+.icon-transport:before {
+  content: "\e910";
+}
+.icon-transaction:before {
+  content: "\e910";
+}
+.icon-shipping:before {
+  content: "\e910";
+}
+.icon-tiktok:before {
+  content: "\e911";
+}
+.icon-heart:before {
+  content: "\e918";
+}
+.icon-like:before {
+  content: "\e918";
+}
+.icon-love:before {
+  content: "\e918";
+}
+.icon-favorite:before {
+  content: "\e918";
+}
+.icon-linkedin:before {
+  content: "\e912";
+}
+.icon-brand:before {
+  content: "\e912";
+}
+.icon-social:before {
+  content: "\e912";
+}
+.icon-mail:before {
+  content: "\e913";
+}
+.icon-cancel-circle:before {
+  content: "\e90e";
+}
+.icon-cross:before {
+  content: "\e90f";
+}
+.icon-arrow-right:before {
+  content: "\e900";
+}
+.icon-right:before {
+  content: "\e900";
+}
+.icon-next:before {
+  content: "\e900";
+}
+.icon-coin-dollar:before {
+  content: "\e901";
+}
+.icon-money:before {
+  content: "\e901";
+}
+.icon-cash:before {
+  content: "\e901";
+}
+.icon-currency-dollar:before {
+  content: "\e901";
+}
+.icon-credit-card:before {
+  content: "\e902";
+}
+.icon-money1:before {
+  content: "\e902";
+}
+.icon-payment:before {
+  content: "\e902";
+}
+.icon-ecommerce:before {
+  content: "\e902";
+}
+.icon-cart:before {
+  content: "\e903";
+}
+.icon-purchase:before {
+  content: "\e903";
+}
+.icon-ecommerce1:before {
+  content: "\e903";
+}
+.icon-shopping:before {
+  content: "\e903";
+}
+.icon-whatsapp:before {
+  content: "\e904";
+}
+.icon-brand3:before {
+  content: "\e904";
+}
+.icon-social3:before {
+  content: "\e904";
+}
+.icon-search:before {
+  content: "\e905";
+}
+.icon-magnifier:before {
+  content: "\e905";
+}
+.icon-magnifying-glass:before {
+  content: "\e905";
+}
+.icon-inspect:before {
+  content: "\e905";
+}
+.icon-find:before {
+  content: "\e905";
+}
+.icon-instagram:before {
+  content: "\e906";
+}
+.icon-brand4:before {
+  content: "\e906";
+}
+.icon-social4:before {
+  content: "\e906";
+}
+.icon-youtube:before {
+  content: "\e907";
+}
+.icon-brand1:before {
+  content: "\e907";
+}
+.icon-social1:before {
+  content: "\e907";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+.icon-brand11:before {
+  content: "\e908";
+}
+.icon-tweet:before {
+  content: "\e908";
+}
+.icon-social11:before {
+  content: "\e908";
+}
+.icon-price-tags:before {
+  content: "\e909";
+}
+.icon-price-tag:before {
+  content: "\e90a";
+}
+.icon-facebook:before {
+  content: "\e90b";
+}
+.icon-brand2:before {
+  content: "\e90b";
+}
+.icon-social2:before {
+  content: "\e90b";
+}
+.icon-user:before {
+  content: "\e90c";
+}
+.icon-profile:before {
+  content: "\e90c";
+}
+.icon-avatar:before {
+  content: "\e90c";
+}
+.icon-person:before {
+  content: "\e90c";
+}
+.icon-member:before {
+  content: "\e90c";
+}
+.icon-menu:before {
+  content: "\e90d";
+}
+.icon-list:before {
+  content: "\e90d";
+}
+.icon-options:before {
+  content: "\e90d";
+}
+.icon-lines:before {
+  content: "\e90d";
+}
+.icon-hamburger:before {
+  content: "\e90d";
+}

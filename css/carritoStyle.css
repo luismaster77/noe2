@@ -1,0 +1,1099 @@
+/*///////////////////////////////////////////////////////////////////////////////
+//                                      Header Barra menu                      //
+///////////////////////////////////////////////////////////////////////////////*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{    
+    font-size: 16px;
+    font-family: 'fontTitles';      
+}
+header{    
+    width: 100%;
+    height: 37px;
+    margin-top: 22px;
+    background: #2c4295;
+    position: relative; /*chages here relative*/
+    z-index: 9999;
+}
+#contenedorLogo{
+    position: relative;
+    background: white; /*withe*/
+    box-shadow: inset;
+    top: -30px;
+    width: 194px; /*Los pixeles del tamaño real son 194*/    
+    margin-left: 32.504px;
+    border-radius: 0px 0px 25px 25px;  
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    height: 85px;    
+    z-index: 11;
+}
+header h1 >*{
+    display: inline-block;
+    vertical-align: middle;        
+    margin: 0px 3px;        
+}   
+header h1 figure{   /*Pocision del logo noe y tama;o*/  
+    position: relative;
+    top: 0px;
+    left: 0px;
+    line-height: 90px;
+    height: 56.333px;
+    width: 46.333px;
+    margin: 0px;       
+}
+header h1 figure img{     
+    position: absolute;   
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    width: 100%;
+    margin-left: 23px;
+    margin-top: 13.75px;    
+    max-width: 75px;
+}
+header #contenedorLogo > *{            
+    margin: 0px 0px 0px 0px;
+    display: inline-block;                        
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+}      
+.letrasLogo{   
+    position: relative;      
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: -100px;
+    right: -115px;
+}    
+header .letrasLogo > *{ 
+    margin-top: 0px;            
+    margin: 0px 0px 0px 0px;
+    display: table;                        
+    vertical-align: middle;
+    text-decoration: none;     
+}  
+header .letrasLogo :nth-child(1){            
+    position: absolute;
+    font-family: 'fontLogo';
+    color: #2c4295;
+    font-size: 60px;            
+    top: 6px;
+    letter-spacing: -1px;
+    left: -2px;   
+    font-weight: normal; 
+    z-index: 12;           
+}
+header .letrasLogo :nth-child(2){                
+    position: relative;
+    color: #2c4295;
+    font-size: 9px;
+    font-family:'fontCofe';
+    font-weight: normal;
+    letter-spacing: 0.14px;
+    top: 1.8px;
+    right: 2.5px;
+    z-index: 12;
+}
+header nav .ioMenuMovil{    
+    position: absolute;
+    top: 0px; /*Esto es lo que modifica el top del icono menu*/    
+    height: 30px;
+    width: 30px;/* ///////////////////////////////*/
+    cursor: pointer;
+    line-height: 50px;
+    margin: 0px 0px 0px 0px;
+    margin-left: 89%;
+    }
+    #hideMenu{
+        /* position: flex; */
+        position: absolute;
+        margin-left: 70.2%;       
+        top: -36px;
+    } 
+    header nav .ioMenuMovil span{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    }
+    header nav #cardmenu{
+        /*Especificaciones de carta movil*/
+        display: none; /*Prender apagar*//* * * * * * * * * * * * * * * * */
+        position: absolute; 
+        height: 300px;
+        width: 35%;
+        top: 37px;        
+        background: white;
+        left: 0px;
+        border-right: 3px solid #F1A600;
+        z-index: 10;
+        padding-bottom: 50px;   
+        margin-left: 65%;        
+    }  
+    header nav #cardmenu #logo_menumovil img{
+    width: 100%;
+    }
+    header nav #cardmenu ul{  
+        margin-top: 0px;
+        list-style: none;
+        font-size: 1.1em;
+        line-height: 55px;
+    }
+    header nav #cardmenu ul li a{
+        text-decoration: none;  
+        color: white;      
+    }
+    header nav #cardmenu ul li a:hover{
+        border-bottom: 3px solid #F1A600;
+    }    
+    header #Usuario,
+    header #Carrito,
+    header #Busqueda
+    {
+        position: absolute;
+        text-align: center;
+        width: 45px;
+        height: 45px;    
+        cursor: pointer;   
+        margin: 5px 15px;
+        z-index: 9999;
+        overflow: hidden;
+        top: 15px; 
+    }
+    header #Busqueda{   
+        top: -8px;
+        margin-left: 68%;            
+    }
+    header #Usuario{
+        top: -8px;
+        margin-left: 78%;        
+    }     
+    /* ////////////////////////////////////////////////////////////////////////////////
+    //                              #Carrito  "!#!"#%&%&/&%/&(/(&/(&(/)$%&$%%&$                                     //
+    /////////////////////////////////////////////////////////////////////////////// */
+    
+    header #Usuario span, 
+    header #Busqueda span
+    {           
+        display: table;  
+        margin: 0 auto; 
+        padding: 10px 10px;   
+        font-size: 22px;
+        color: white;         
+    }    
+    header #Usuario:hover{            
+        color: #00A4C4;
+        border-bottom: 4px solid #F1A600;
+    }       
+    header #Usuario span:hover{
+        color: #00A4C4;
+    }      
+    #Busqueda :hover{
+        color: #00A4C4;
+        border-bottom: 4px solid #F1A600;
+    }  
+
+    /* ////////////////////////////////////////////////////////////////////////////////
+    //                             Productos Tienda                              //
+    ///////////////////////////////////////////////////////////////////////////////*/
+    .separation{  
+        position: relative;
+        text-align: center;         
+        margin-top: 50px;   
+        margin-bottom: 25px;      
+        height: 50px;
+        line-height: 50px; 
+        width: 80%;       
+        border-radius: 0px 25px 25px 0px;          
+        background: #2c4295;
+        color: white;
+    }   
+    .separationSumarry{     
+        margin-top: 20px;     
+        margin-left: 20%;
+        margin-bottom: 25px;  
+        height: 50px; 
+        width: 80%;          
+        line-height: 50px;      
+        border-radius: 25px 0px 0px 25px;  
+        position: relative;       
+        background: #2c4295;
+        text-align: center;  
+        color: white;
+        font-size: 22px;
+    }     
+    .separationResumen{  
+        position: relative;
+        text-align: center;         
+        margin-top: 50px;   
+        margin-bottom: 25px;      
+        height: 50px;
+        line-height: 50px; 
+        width: 80%;       
+        border-radius: 25px 25px 25px 25px;          
+        background: #2c4295;
+        color: white;
+    } 
+/*////////////////////////////////////////////////////////////////////////////////
+//                        Css Productos~~~!                                    //
+///////////////////////////////////////////////////////////////////////////////*/    
+.contenedorOfertasEspeciales{   
+    max-width: 10800px;
+    margin: auto;
+    padding: 30px 10px 30px 10px;
+} 
+.row {              
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;              
+}   
+.col-4 {            
+    background: white;   
+    border: 8px solid #f8f8f8f6;
+    flex-basis: 25%;
+    padding: 10px;        
+    min-width: 200px;       
+    transition: all 0.5s;  /* Para el hoover de mas abajo, pero no esta agarrando el transform, sin embargo el all funciono */ 
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'fontCofe';
+}
+.col-4 img {
+    width: 100%;
+}    
+.col-4 h4 {
+    color: black;
+    font-weight: normal;    
+}    
+.col-4 p {
+    color: black;
+    font-size: 16px;
+}
+.col-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border: 0.0001px solid #f8f8f8f6;       
+}
+.col-4 .Costo{         
+    position: relative; 
+    height: 30px;    
+    width: 100%;              
+} 
+.Costo >*{ 
+    position: absolute; 
+    margin-right: 2%;      
+    display: inline;
+    line-height: 30px;   
+}     
+.Costo :nth-child(2){  
+    color: #00a3c4;     
+    position: absolute;   
+    margin-left: 15%;
+    display: none;
+}      
+
+.Costo :nth-child(3){
+    margin-left: 70%;   
+}
+.Costo :nth-child(4){
+    margin-left: 85%;   
+}        
+.Costo .icon-favorite{   
+    color: #2c4295;
+}     
+.Costo .icon-ecommerce1{        
+    color: #2c4295;
+}      
+.col-4 .icon-ecommerce1:hover{
+    color: #00A4C4;        
+}
+.col-4 .icon-favorite:hover{
+    color:  #00A4C4;       
+}  
+.col-4 .mOferta .precio{
+    text-decoration: line-through;
+    color: #cccc;
+}
+.col-4 .mOferta :nth-child(3){
+    margin-left: 20%;        
+}
+.col-4 .mOferta :nth-child(2){
+    margin-left: 40%;
+    display: flex;
+}
+.col-4 .mOferta :nth-child(4){
+    margin-left: 70%;
+}
+.col-4 .mOferta :nth-child(5){
+    margin-left: 85%;
+}
+  /*///////////////////////////////////////////////////////////////////////////////
+  //                                   #FOOTER                                   //
+  ///////////////////////////////////////////////////////////////////////////////*/
+.footer {    
+    background-image: url(/media/fotosSlider/Footer\ Tienda\ Web-14.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;  
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    color: #8a8a8a;
+    padding: 250px 0 35px;
+}
+.containerF{        
+    margin-top: 159px;
+}
+.footer img {
+    width: 100%;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {        
+    color: #fff;
+    margin-bottom: 20px; 
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;    
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+
+}
+
+.footer-col-3 ul, .footer-col-4 ul{
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;        
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 0px 0px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+.footer-col-4 a {
+    text-decoration: none;
+}
+
+.footer-col-4 span {
+    color: white;
+    font-size: 22px;
+}    
+.rowF{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+} 
+/*////////////////////////////////////////////////////////////////////////////////
+//                              Resumen Productos                             //
+//////////////////////////////////////////////////////////////////////////////*/
+/* .row {              
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;              
+}   
+.col-4 {            
+    background: white;   
+    border: 8px solid #f8f8f8f6;
+    flex-basis: 25%;
+    padding: 10px;        
+    min-width: 200px;       
+    transition: all 0.5s; 
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'fontCofe';
+} */
+.template-carrito{
+    background: white;   
+    width: 80%;
+    height: auto;    
+    position: relative;
+    display: flex;
+    justify-content: center;      
+}
+tr th img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #00A4C4;
+}
+table{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 15px;
+    border-collapse: separate;
+    table-layout: fixed;
+    width: 80%;
+    border-spacing: 0 5px; /* this is the ultimate fix */  
+    color: black;
+}
+table th{
+    text-align: left;
+    padding: 5px 15px;
+}
+table td{
+    border-width: 3px 0;
+    width: 50%;
+    border-color: #f8f8f8f6;
+    border-style: solid;
+    background-color: #f8f8f8f6;
+    color: black;
+    padding: 5px 15px;
+}
+table td:first-child {
+    border-left-width: 3px;
+    border-radius: 5px 0 0 5px;
+}
+  table td:last-child {
+    border-right-width: 3px;
+    border-radius: 0 5px 5px 0;
+}
+.botonPlus{
+    background: #2c4295;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    color: white;
+}
+.botonMenus{
+    background: #2c4295;
+    padding: 5px 7px 5px 7px;
+    border: none;
+    color: white;
+}
+.botonPlus:hover{
+    background: #00A4C4;
+    cursor: pointer;
+}
+.botonMenus:hover{
+    background: #00A4C4;
+    cursor: pointer;
+}
+#vaciar-carrito{
+    padding: 10px 2px 10px 2px;
+    border-radius: 10px 10px 10px 10px;
+    border-bottom: 6px solid #00A4C4;
+    background: rgba(214, 3, 3, 0.803);
+    color: white;
+    border: none;
+}
+#vaciar-carrito:hover{
+    background: rgba(201, 63, 63, 0.755);
+    color: white;
+    border: none;
+}
+#footerTable{
+    position: absolute;
+    color: red;
+}
+.template-footer{    
+    background: white;   
+    width: 80%;
+    height: auto;    
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+    margin-top: 45px;    
+}
+.itemsT{
+    width: 500px;
+    color: #00A4C4;
+    height: 200px;
+    background: #00A4C4;
+}
+.vaciarCarrito{
+    color: white;
+    background: rgb(184, 0, 0);
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+/*///////////////////////////////////////////////////////////////////////////////*/
+/*                              Boton Envio a formulario                        */
+/*////////////////////////////////////////////////////////////////////////////////*/
+
+.btn {
+    display: inline-block;
+    background: #2c4295;
+    position: relative;    
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    width: 25%;
+    /* padding-bottom: 15px; */
+    /* padding: 10px 80px; */    
+    margin-top: 25px;
+    margin-left: 60%;
+    border-radius: 10px 10px 10px 10px;
+    border-bottom: 6px solid #00A4C4;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    cursor: pointer;
+}
+.btnEnvio{   
+    
+    color: white;
+}
+
+.btn:hover {
+    background: #00A4C4;
+}
+/*////////////////////////////////////////////////////////////////////////////////
+                                    Segundo Try                                 //
+///////////////////////////////////////////////////////////////////////////////*/
+.container{    
+    background: white;   
+    width: 90%;
+    height: auto;    
+    position: relative;
+    display: flex;
+    justify-content: center;  
+            
+}
+table{    
+    font-family: 'fontCofe';
+    font-size: 15px;
+    border-collapse: separate;
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0 5px;
+    color: black;   
+}
+/* Esto es la adecuacion que se le hizo al carrit*/
+ table th{
+    text-align: center;
+}
+table tr {
+    font-family:'fontCofe';
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+}
+.cu{
+    text-align: right;
+    padding-left: 40px ;   
+} 
+/*ESTAMOS ACA Y TENEMOS QUE SEGUIR Y TERMINAR EL RESPONSIVE*/
+.quegana{
+    
+    padding: 0px 10px;  
+    
+}
+.quegana2{
+  
+    padding: 0px 10px; 
+   
+}
+.quegana4{
+    
+    padding: 0px 70px; 
+   
+}
+.quegana5{    
+
+    padding: 0px 85px; 
+   
+}
+
+table.table thead tr :nth-child(2){    
+    display: none;
+}
+table.table thead tr :nth-child(3){    
+    display: none;
+}
+.sobrePuto {    
+    display: none;
+}
+.cu{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}    
+/*///////////////////////////////////////////////////////////////////////////////
+//                              Media Query's
+///////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 300px) {
+    body{
+        background: #f8f8f8f6;
+    }   
+    .redesSociales{
+        display: none;
+    }
+    #contenedorLogo{      
+        margin-left: 9.504px;       
+    }
+    header .letrasLogo :nth-child(1){
+        left: -22.8px;
+    }
+    header .letrasLogo :nth-child(2){
+        right: 22.5px;
+    }
+    .col-4 {
+        flex-basis: 100%;
+    }   
+    header nav #cardmenu{
+        height: 229px;
+    }    
+    header nav #cardmenu ul li a{
+        color: black;
+        font-size: 14px;
+    }
+    
+    
+}
+@media screen and (min-width: 360px){    
+    body{
+        background: #f8f8f8f6;
+    }
+    .redesSociales{
+        display: none;
+    }   
+    #contenedorLogo{      
+        margin-left: 32.504px;       
+    }    
+    header .letrasLogo :nth-child(1){
+        left: -2px;
+    }
+    header .letrasLogo :nth-child(2){
+        right: 2.5px;
+    }       
+    header nav #cardmenu ul li a{
+        color: black;
+        font-size: 15px;
+    }
+    .cu{
+        text-align: left;
+        padding-left: 25px;        
+    } 
+}
+@media screen and (min-width: 480px){    
+    body{
+        background: #f8f8f8f6;
+    } 
+    .redesSociales{
+        display: none;
+    }   
+    .col-4 .Costo{          
+        height: 30px; 
+        width: 100%;
+    }     
+    .Costo :nth-child(2){
+        margin-left: 12%;   
+    } 
+    .quegana{    
+        padding: 0px 10px;          
+    }
+    .quegana2{      
+        padding: 0px 10px;        
+    }
+    .quegana3{
+        padding: 0px 25px; 
+    }
+    .quegana4{        
+        padding: 0px 97px;        
+    }
+    .quegana5{    
+        padding: 0px 100px;        
+    }   
+    table.table thead tr :nth-child(2){        
+        display: block;
+        position: absolute;
+        top: 5px;
+    }
+    table.table thead tr :nth-child(3){       
+        display: block;
+        padding-left: 100px;
+    }
+    .sobrePuto {        
+        display: block;
+    }
+    .cu{
+        padding-left: 13px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;    
+    }    
+    .sobrePuto{
+        text-align: left;
+        padding-left: 35px;
+    }
+    .cu{
+        text-align: center;
+
+    }
+    .cuc{
+        font-family:'fontCofe';
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 600px){        
+    body{
+        background: #f8f8f8f6;
+    }   
+    .row{
+        text-align: left;
+    }   
+    .col-4 {
+        flex-basis: 50%;
+    }           
+    .redesSociales{
+        display: none; 
+    }    
+    .Costo :nth-child(2){
+        margin-left: 18%;   
+    }    
+    .quegana{    
+        padding: 0px 10px;          
+    }
+    .quegana2{      
+        padding: 0px 10px;        
+    }
+    .quegana3{
+        padding: 0px 25px; 
+    }
+    .quegana4{        
+        padding: 0px 137px;        
+    }
+    .quegana5{    
+        padding: 0px 143px;        
+    }  
+    table.table thead tr :nth-child(3){       
+        display: block;
+        padding-left: 130px;
+    }
+}
+@media screen and (min-width: 767px){        
+    body{
+        background: #f8f8f8f6; /*#f8f8f8f6*/
+    } 
+    header nav{        
+        position: absolute;            
+        display: inline-block;   
+        vertical-align: middle;         
+        width: 55%;
+        height: 35px;
+        margin-left: 32%;
+        top: 0px;            
+    }        
+    header nav #showMenu span,
+    header nav #hideMenu span {       
+        display: none;
+    }  
+    header nav #cardmenu{  
+        background: none;                    
+        display: inline-block;
+        border: none;            
+        height: 22px;
+        position: relative;            
+        top: -28px;
+        width: 100%;            
+        padding: 0px;
+        margin-left: 0%;
+    }    
+    header nav #cardmenu ul{                       
+        position: absolute;
+        padding: 0px;
+        margin: 0px;  
+        width: 100%;
+        text-align: left;                       
+    }
+    header nav #cardmenu ul li{    
+        position: relative;                                      
+        display: inline-block;            
+        font-size: 16px;
+        margin: 0px 10px 0px 0px;            
+        margin-top: 17px;
+    }             
+    header nav #cardmenu ul li a:hover{
+        border-bottom: 4px solid #F1A600;
+    }    
+    header #Usuario,       
+    header #Busqueda
+    {
+        position: absolute;
+        text-align: center;
+        width: 45px;
+        height: 45px;    
+        cursor: pointer;   
+        margin: 5px 15px;
+        z-index: 9999;
+        overflow: hidden;
+        top: 15px; 
+    }
+    header #Busqueda{   
+        top: -8px;
+        margin-left: 84%;                
+    }
+    header #Usuario{
+        top: -8px;
+        margin-left: 90%;            
+    }    
+    header #Carrito{        
+        top: 14%;
+        margin-left: 88%;
+        width: 115px;
+        max-height: 42px;
+        position: fixed;
+        background: white;         
+        z-index: 1;            
+    }  
+    header #Carrito span{     
+        color: #2c4295;
+        display: flex;  
+        margin-top: -5%; 
+        padding: 12px 10px;   
+        font-size: 30px;
+    }
+    .redesSociales{
+        display: none;
+    } 
+    .col-4 {
+        flex-basis: 33.3333%;
+    }    
+    .Costo :nth-child(2){
+        margin-left: 22%;   
+    }  
+    header nav #cardmenu ul li a{
+        color: white;
+        font-size: 15px;
+    }
+    .quegana{    
+        padding: 0px 10px;          
+    }
+    .quegana2{      
+        padding: 0px 10px;        
+    }
+    .quegana3{
+        padding: 0px 25px; 
+    }
+    .quegana4{        
+        padding: 0px 180px;        
+    }
+    .quegana5{    
+        padding: 0px 185px;        
+    }  
+    table.table thead tr :nth-child(3){       
+        display: block;
+        padding-left: 170px;
+    }
+}
+
+@media screen and (min-width: 950px){        
+    body{
+        background: #f8f8f8f6; /**/
+    }   
+    .separation{
+        font-size: 22px;
+    }    
+    header nav{            
+        position: absolute;            
+        display: inline-block;   
+        vertical-align: middle;         
+        width: 55%;
+        height: 35px;
+        margin-left: 25%;
+        top: 0px;
+    }        
+    header nav #showMenu span,
+    header nav #hideMenu span {       
+        display: none;
+    }  
+    header nav #cardmenu{       
+        display: inline-block;
+        border: none;            
+        height: 22px;
+        position: relative;            
+        top: -28px;
+        width: 100%;
+        text-align: center;            
+        padding: 0px;
+        margin-left: 0%;  
+    }
+    header nav #cardmenu ul{  
+        text-align: left;  
+        position: absolute;
+        padding: 0px 28px; 
+    }
+    header nav #cardmenu ul li{ 
+           
+        position: relative; 
+        display: inline-block;            
+        font-size: 18px;
+        margin: 0px 7px 0px 0px; 
+        margin-top: 19px;
+        margin-left: 0%;
+    }
+    header nav #cardmenu ul li a:hover{ 
+        border-bottom: 4px solid #F1A600;
+    }    
+    header #Usuario,       
+    header #Busqueda
+    {
+        position: absolute;
+        text-align: center;
+        width: 45px;
+        height: 45px;    
+        cursor: pointer;   
+        margin: 5px 15px;
+        z-index: 9999;
+        overflow: hidden;
+        top: 15px; 
+    }
+    header #Busqueda{   
+        top: -8px;
+        margin-left: 70%;
+    }
+    header #Usuario{
+        top: -8px;
+        margin-left: 75%;            
+    }    
+    .redesSociales{  
+        overflow: hidden;
+        display: inline-block;
+        position: absolute;            
+        width: 170px;
+        top: 2px;
+        margin-left: 105%;
+    }
+    .redesSociales > *{  
+        overflow: hidden; 
+        font-size:  16px;
+        position: relative;
+        display: inline-block;            
+        text-decoration: none;  
+        list-style-type: none;
+        line-height: 35px;
+        margin-right: 5px;              
+    }
+    .redesSociales span {
+        color: white;        
+    }
+    .redesSociales span:hover {
+        color: #00A4C4;
+    }
+    .redesSociales a {
+        text-decoration: none;
+    }
+    .separation p {   
+        font-size: 22px;              
+    }   
+    .col-4 {
+        flex-basis: 25%;
+    }     
+    .contenedorOfertasEspeciales{          
+        max-width: 10800px;
+        margin: auto;
+    }  
+    header #Carrito{        
+        top: 14%;
+        margin-left: 94%;
+        width: 115px;
+        max-height: 42px;
+        position: fixed;
+        background: white;           
+        z-index: 1;            
+    }   
+    header #Carrito span{     
+        color: #2c4295;
+        display: flex;  
+        margin-top: -5%; 
+        padding: 12px 10px;   
+        font-size: 30px;
+    }
+    .quegana4{        
+        padding: 0px 230px;        
+    }
+    .quegana5{    
+        padding: 0px 235px;        
+    }  
+    table.table thead tr :nth-child(3){       
+        display: block;
+        padding-left: 220px;
+    }
+}
+@media screen and (min-width: 1024px){  
+    .quegana4{        
+        padding: 0px 250px;        
+    }
+    .quegana5{    
+        padding: 0px 255px;        
+    }  
+    table.table thead tr :nth-child(3){       
+        display: block;
+        padding-left: 240px;
+    }
+    .sobrePuto{
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+@media screen and (min-width: 1281px){   
+    .quegana4{        
+        padding: 0px 320px;        
+    }
+    .quegana5{    
+        padding: 0px 325px;        
+    }  
+    table.table thead tr :nth-child(3){       
+        display: block;
+        padding-left: 310px;
+    }
+    header nav #cardmenu ul {
+         padding: 0px 0px;
+    }
+
+    header nav #cardmenu ul li {
+        margin-left: 5%;
+    }
+   
+}
+
+  

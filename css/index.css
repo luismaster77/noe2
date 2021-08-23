@@ -1,0 +1,1882 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{    
+    font-size: 16px;
+    font-family: 'fontTitles';          
+}
+.coverSerch{
+    background: red;
+    top: 0;
+    left: 0;
+    width:  2000px;
+    height: 2000px;
+    z-index: 1000000;
+}
+header{    
+    width: 100%;
+    height: 37px;
+    margin-top: 22px;
+    background: #2c4295;
+    position: absolute; /*chages here relative*/
+    z-index: 9999;
+}
+#contenedorLogo{
+    position: relative;
+    background: white; /*withe*/
+    box-shadow: inset;
+    top: -30px;
+    width: 194px; /*Los pixeles del tamaño real son 194*/    
+    margin-left: 32.504px;
+    border-radius: 0px 0px 25px 25px;  
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    height: 85px;    
+}
+header h1 >*{
+    display: inline-block;
+    vertical-align: middle;        
+    margin: 0px 3px;        
+}   
+header h1 figure{   /*Pocision del logo noe y tama;o*/  
+    position: relative;
+    top: 0px;
+    left: 0px;
+    line-height: 90px;
+    height: 56.333px;
+    width: 46.333px;
+    margin: 0px;       
+}
+header h1 figure img{     
+    position: absolute;   
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    width: 100%;
+    margin-left: 23px;
+    margin-top: 13.75px;    
+    max-width: 75px;
+}
+header #contenedorLogo > *{            
+    margin: 0px 0px 0px 0px;
+    display: inline-block;                        
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+}      
+.letrasLogo{   
+    position: relative;      
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: -100px;
+    right: -115px;
+}    
+header .letrasLogo > *{ 
+    margin-top: 0px;            
+    margin: 0px 0px 0px 0px;
+    display: table;                        
+    vertical-align: middle;
+    text-decoration: none;     
+}  
+header .letrasLogo :nth-child(1){            
+    position: absolute;
+    font-family: 'fontLogo';
+    color: #2c4295;
+    font-size: 60px;            
+    top: 6px;
+    letter-spacing: -1px;
+    left: -2px;   
+    font-weight: normal;            
+}
+header .letrasLogo :nth-child(2){                
+    position: relative;
+    color: #2c4295;
+    font-size: 9px;
+    font-family:'fontCofe';
+    font-weight: normal;
+    letter-spacing: 0.14px;
+    top: 1.8px;
+    right: 2.5px;
+}
+header nav .ioMenuMovil{    
+    position: absolute;
+    top: 0px; /*Esto es lo que modifica el top del icono menu*/    
+    height: 30px;
+    width: 30px;/* ///////////////////////////////*/
+    cursor: pointer;
+    line-height: 50px;
+    margin: 0px 0px 0px 0px;
+    margin-left: 89%;
+    }
+    #hideMenu{
+        /* position: flex; */
+        position: absolute;
+        margin-left: 70.2%;       
+        top: -36px;
+    } 
+    header nav .ioMenuMovil span{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    }
+    header nav #cardmenu{
+        /*Especificaciones de carta movil*/
+        display: none; /*Prender apagar*//* * * * * * * * * * * * * * * * */
+        position: absolute; 
+        height: 300px;
+        width: 35%;
+        top: 37px;        
+        background: #00A4C4;
+        left: 0px;
+        border-right: 3px solid #F1A600;
+        z-index: 1000;
+        padding-bottom: 50px;   
+        margin-left: 65%;        
+    }  
+    header nav #cardmenu #logo_menumovil img{
+    width: 100%;
+    }
+    header nav #cardmenu ul{  
+        margin-top: 0px;
+        list-style: none;
+        font-size: 1.1em;
+        line-height: 55px;
+    }
+    header nav #cardmenu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    header nav #cardmenu ul li a:hover{
+        border-bottom: 3px solid #F1A600;
+    }
+    
+    header #Usuario,
+    header #Carrito,
+    header #Busqueda
+    {
+        position: absolute;
+        text-align: center;
+        width: 45px;
+        height: 45px;    
+        cursor: pointer;   
+        margin: 5px 15px;
+        z-index: 9999;
+        overflow: hidden;
+        top: 15px; 
+    }
+    header #Busqueda{   
+        top: -8px;
+        margin-left: 68%;            
+    }
+    header #Usuario{
+        top: -8px;
+        margin-left: 78%;        
+    }
+    header #Carrito{        
+        top: 16%;
+        margin-left: 82%;
+        width: 115px;
+        max-height: 42px;
+        position: fixed;
+        background: white;               
+        border-radius: 25px 0px 0px 25px; 
+        z-index: 1;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }   
+    header #Carrito ::after{        
+            content: '';
+            background: none;
+            position: absolute;
+            border-radius: 25px 0px 0px 25px; 
+            border: 1px solid #2c4295;
+            top: 2px;
+            bottom: 2px;
+            left: 2px;
+            right: 2px;          
+    }
+    /* ////////////////////////////////////////////////////////////////////////////////
+    //                              #Carrito  "!#!"#%&%&/&%/&(/(&/(&(/)$%&$%%&$                                     //
+    /////////////////////////////////////////////////////////////////////////////// */
+    header #Carrito span{ 
+        color: #2c4295;
+        display: flex;  
+        margin-top: -5%; 
+        padding: 12px 10px;   
+        font-size: 30px;        
+    }
+    header #Usuario span, 
+    header #Busqueda span
+    {           
+        display: table;  
+        margin: 0 auto; 
+        padding: 10px 10px;   
+        font-size: 22px;
+        color: white;         
+    }    
+    header #Usuario:hover{            
+        color: #00A4C4;
+        border-bottom: 4px solid #F1A600;
+    }       
+    header #Usuario span:hover{
+        color: #00A4C4;
+    }
+    #Carrito:hover{
+        color: #00A4C4;
+        border: 2px solid #F1A600;
+    }     
+    #Busqueda :hover{
+        color: #00A4C4;
+        border-bottom: 4px solid #F1A600;
+    }  
+    /* ////////////////////////////////////////////////////////////////////////////////
+    //                                Slider Prefab (1)(2)                          //
+    ///////////////////////////////////////////////////////////////////////////////*/   
+    .swiper1{            
+        margin-top: 0px;    
+        height: 450px;        
+        width: 100%; 
+    }    
+    .swiper-wrapper1{                
+        position: relative;
+    }
+    .imgBx1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .imgBx1 img{           
+        width: 100%;        
+        height: 470px; 
+        position: relative;
+        right: 0px;    
+    }    
+    .swiper1 img{
+        max-width: 100%;
+        height: auto;
+    }     
+     
+    .swiper-slide1 >*{         
+        color: white;
+        font-size: 1.8em;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0px;          
+    }
+   
+    /* Swiper2 */
+    .swiper2{           
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background: white;
+        box-shadow: 0px -10px 15px rgba(219, 219, 219, 0.521) inset;        
+    }
+    .swiper-wrapper2{
+        position: relative;
+    }
+    .swiper-slide2{    
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 95px;
+    } 
+    .swiper-slide2 >*{
+        color: white;
+        font-size: 1.8em;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0px;   
+        margin-left: 10px;    
+    } 
+    .swiper-slide2 .imgBx img{     
+        position: relative;
+        align-items: center;        
+        filter: grayscale(100%);
+        overflow: hidden;
+        width: 55%;
+        height: auto;
+        left: 50px;
+        cursor: pointer;  
+        top: -35px;      
+    }
+    .imgBx img:hover{       
+         filter: grayscale(0%);   
+    }
+    .col-4{
+        font-family: 'fontCofe';        
+    }
+    
+    /* ////////////////////////////////////////////////////////////////////////////////
+    //                             Barra De Busqueda                                //
+    ///////////////////////////////////////////////////////////////////////////////*/
+    .boxBusqueda{
+        position: relative;
+        margin-left: 25%;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+        border: 3px solid whitesmoke;    
+        background-color: #2c4295; 
+        border-radius: 25px 25px 25px 25px;  
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+    .boxBusqueda .icon-inspect{
+        padding-left: 15px;
+        position: absolute;
+        font-size: 25px;
+        z-index: 2;     
+        line-height: 45px;
+        color: white;
+    }
+    #buscador{
+        position: absolute;       
+        width: 80%;
+        height: 80%; 
+        top: 4px;
+        left: 10%;    
+        line-height: 50px;
+        border: 3px solid whitesmoke;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 25px 25px 25px 25px; 
+        background-position: 10px 10px;        
+    }    
+    input[type=text]:focus {
+        background: rgb(206, 206, 206);
+    } 
+
+    input.middle:focus {
+        outline-width: 50px;
+    }
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+    outline: none;
+    }        
+    
+    /* ////////////////////////////////////////////////////////////////////////////////
+    //                             Productos Tienda                              //
+    ///////////////////////////////////////////////////////////////////////////////*/
+    .separation{  
+        position: relative;
+        text-align: center;        
+        margin-top: 23px;         
+        height: 50px;
+        line-height: 50px; 
+        width: 70%;       
+        border-radius: 0px 25px 25px 0px;          
+        background: #2c4295;
+        color: white;
+    }   
+    .separationR{     
+        margin-top: 20px;     
+        margin-left: 20%;
+        height: 50px; 
+        width: 80%;          
+        line-height: 50px;      
+        border-radius: 25px 0px 0px 25px;  
+        position: relative;       
+        background: #2c4295;
+        text-align: center;  
+        color: white;
+        font-size: 22px;
+    }   
+
+    /*////////////////////////////////////////////////////////////////////////////////
+    //                       Ofertas especiales                                   //
+    ///////////////////////////////////////////////////////////////////////////////*/
+    .contenedorOfertasEspeciales{   
+        max-width: 1080px;
+        margin: auto;
+        padding: 30px 10px 30px 10px;
+    } 
+    .row {              
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;              
+    }   
+    .col-4 {            
+        background: white;   
+        border: 8px solid #f8f8f8f6;
+        flex-basis: 25%;
+        padding: 10px;        
+        min-width: 200px;       
+        transition: all 0.5s;  /* Para el hoover de mas abajo, pero no esta agarrando el transform, sin embargo el all funciono */ 
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .col-4 img {
+        width: 100%;
+    }    
+    .col-4 h4 {
+        color: black;
+        font-weight: normal;    
+    }    
+    .col-4 p {
+        color: black;
+        font-size: 16px;
+    }
+    .col-4:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border: 0.0001px solid #f8f8f8f6;       
+    }
+    .col-4 .Costo{         
+        position: relative; 
+        height: 30px;    
+        width: 100%;              
+    } 
+    .Costo >*{ 
+        position: absolute; 
+        margin-right: 2%;      
+        display: inline;
+        line-height: 30px;   
+    }     
+    .Costo :nth-child(2){  
+        color: #00a3c4;     
+        position: absolute;   
+        margin-left: 15%;
+        display: none;
+    }      
+    
+    .Costo :nth-child(3){
+        margin-left: 70%;   
+    }
+    .Costo :nth-child(4){
+        margin-left: 85%;   
+    }        
+    .Costo .icon-favorite{   
+        color: #2c4295;
+    }     
+    .Costo .icon-ecommerce1{        
+        color: #2c4295;
+    }      
+    .col-4 .icon-ecommerce1:hover{
+        color: #00A4C4;        
+    }
+    .col-4 .icon-favorite:hover{
+        color:  #00A4C4;       
+    }  
+    .col-4 .mOferta .precio{
+        text-decoration: line-through;
+        color: #cccc;
+    }
+    .col-4 .mOferta :nth-child(3){
+        margin-left: 20%;        
+    }
+    .col-4 .mOferta :nth-child(2){
+        margin-left: 40%;
+        display: flex;
+    }
+    .col-4 .mOferta :nth-child(4){
+        margin-left: 70%;
+    }
+    .col-4 .mOferta :nth-child(5){
+        margin-left: 85%;
+    }
+    
+      
+    /*///////////////////////////////////////////////////////////////////////////////
+    //                                   #FOOTER                                   //
+    ///////////////////////////////////////////////////////////////////////////////*/
+    .footer {    
+        background-image: url(/media/fotosSlider/Footer\ Tienda\ Web-14.jpg);    
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center center;  
+        background-attachment: fixed;
+        width: 100%;
+        height: auto;
+        color: #8a8a8a;
+        padding: 250px 0 35px;
+    }
+    .container{        
+        margin-top: 200px;
+    }
+    .footer img {
+        width: 100%;
+    }
+    
+    .footer p {
+        color: #8a8a8a;
+    }
+    
+    .footer h3 {        
+        color: #fff;
+        margin-bottom: 20px; 
+    }
+    
+    .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+        min-width: 250px;
+        margin-bottom: 20px;    
+    }
+        
+    .footer-col-1 {
+        flex-basis: 30%;
+    }
+    
+    .footer-col-2 {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .footer-col-2 img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-col-3, .footer-col-4 {
+        flex-basis: 12%;
+        text-align: center;
+    
+    }
+    
+    .footer-col-3 ul, .footer-col-4 ul{
+        list-style-type: none;
+    }
+    
+    .app-logo {
+        margin-top: 20px;        
+    }
+    
+    .app-logo img {
+        width: 140px;
+    }
+    
+    .footer hr {
+        border: none;
+        background: #b5b5b5;
+        height: 1px;
+        margin: 0px 0px;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    
+    .menu-icon {
+        width: 28px;
+        margin-left: 20px;
+        display: none;
+    
+    }
+    .footer-col-4 a {
+        text-decoration: none;
+    }
+
+    .footer-col-4 span {
+        color: white;
+        font-size: 22px;
+    }    
+    .rowF{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;   
+    } 
+/*////////////////////////////////////////////////////////////////////////////////
+//                                  Carrito OverLay                            //         
+///////////////////////////////////////////////////////////////////////////////*/
+h5 {      
+    position: absolute;
+    top: 14.65%;
+    margin-left: 94%;
+    width: 115px;
+    min-height: 42px;
+    position: fixed;
+    background: none;              
+    z-index: 1;    
+    cursor: pointer;
+}
+h5:hover{
+    border:3px solid #F1A600;
+    border-radius: 25px 0px 0px 25px;     
+}
+
+h5::before {
+    content: attr(data-count);
+    position: absolute;
+    color: white;
+    right: 60px;
+    font-size: 15px;
+    text-align: center;
+    top: -11px;
+    width: 20px;
+    height: 20px;
+    background: #00A4C4;
+    border-radius: 50%;
+    opacity: 0;    
+}
+
+h5.zero::before {
+    opacity: 1;    
+}
+section div span {
+    background: red;
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    width: 300px;
+    height: 186px;
+    display: none;
+}
+section div:nth-child(1)>span.active {
+    animation: first 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+
+section div:nth-child(2)>span.active {
+    animation: second 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+
+section div:nth-child(3)>span.active {
+    animation: third 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+
+section div:nth-child(4)>span.active {
+    animation: four 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+.select{
+    width: 35%;
+    height: 250px;
+    padding: 0%;
+    background: #f8f8f8f6; /*#f8f8f8f6*/
+    border: 1px solid #b5b5b5;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  
+    position: fixed;
+    top:  -1000px;
+    left: 58%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+    z-index: 99999;
+}
+.select.display {
+    top: 100px;    
+} 
+.select div {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;    
+    padding: 0px; /*5px*/
+    border: 0.0001px solid #f8f8f8f6;  
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);   
+    position: relative;
+    margin: 5px auto;
+}
+.select div img {
+    width: 200px;
+    height: 100%;
+}
+.select div b {    
+    position: absolute;      
+    font-size: 15px;   
+    top: 70%;
+    color: black;
+    font-family:'fontCofe';
+
+}
+.select div p {    
+    position: absolute;      
+    font-size: 25px;   
+    left: 4%;
+    color: black;
+    font-family:'fontCofe';
+}
+
+.select div h6{    
+    position: absolute;
+    font-size: 18px;
+    top: 10%;
+    left: 44%;    
+    color: black;
+    font-family:'fontCofe';
+}
+.select div strong{    
+    position: absolute;
+    font-size: 18px;
+    top: 85%;
+    left: 90%;    
+    color: black;
+    font-family:'fontCofe';
+}
+.select div button {
+    position: absolute;   
+    top: 80%;
+    left: 45%;   
+    background: #2c4295;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+}
+.tuputa{
+    position: absolute;
+    font-size: 25px;
+    left: 45%;    
+    color: black;
+    font-family:'fontCofe';
+}
+.select div button :focus {
+    background: #2c4295;    
+}
+.icon-cross{
+    position: absolute;
+    display: flex;
+    margin-left: 90%;    
+    font-family: 'icomoon'; 
+    font-size: 22px;
+    color: #8a8a8a; 
+    cursor: pointer; 
+}
+.icon-cross:hover{
+   color: black;
+   transition: all 0.5s;
+  
+}
+
+/*///////////////////////////////////////////////////////////////////////////////
+//                                      
+///////////////////////////////////////////////////////////////////////////////*/
+
+@keyframes first{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 1290px;
+        top: -70px;
+    }
+}
+
+@keyframes second{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+@keyframes third{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 606px;
+        top: -70px;
+    }
+}
+
+@keyframes four{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 265px;
+        top: -70px;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////
+//                                Media Query Pai                             //
+///////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 279px){
+    .redesSociales{
+        display: none;
+    }
+    h5 {      
+         margin-left: 82%;  
+         top: 16.7%;    
+    }  
+    .select {
+        width: 50%;
+        left: 30%;
+        height: 212px;
+    }
+    .select div h4 {
+        opacity: 0;
+    }
+    .select div b{
+        top: 64%;
+    }
+    .select div strong{
+        left: 84%;
+    }   
+
+    .select div {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;    
+        padding: 0px; 
+        border: 0.0001px solid #f8f8f8f6;  
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);   
+        position: relative;
+        margin: 5px auto;
+    }
+
+    .select div img {
+        position: relative; 
+        top: -45px;
+        left: 8%;
+        width: 100px;
+        height: 50%;
+    }
+    
+    .select div p {    
+        position: absolute;
+        font-size: 15px;
+        top: 64%;
+        left: 6%; 
+        color: black;
+        font-family:'fontCofe';
+    }
+    
+    .select div h6{    
+        position: absolute;
+        font-size: 10px;
+        top: 55%;
+        left: 0%;    
+        color: black;
+        font-family:'fontCofe';
+    }
+
+    .select div button {
+        position: absolute;   
+        top: 80%;
+        left: 35%;   
+        background: #2c4295;
+        color: white;
+        padding: 4px;
+        cursor: pointer;
+    }
+
+    .select div button :focus {
+        background: #2c4295;    
+    }
+
+    .icon-cross{
+        position: absolute;
+        display: flex;
+        top: 10px;
+        margin-left: 84%;    
+        font-family: 'icomoon'; 
+        font-size: 20px;
+        color: #8a8a8a; 
+        cursor: pointer; 
+    }
+
+    .icon-cross:hover{
+       color: black;
+       transition: all 0.5s;
+      
+    }
+}
+/*///////////////////////////////////////////////////////////////////////////////
+//                              Media Query's                                  //
+///////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 300px){
+    .redesSociales{
+        display: none;
+    }
+    #contenedorLogo{      
+        margin-left: 9.504px;       
+    }    
+    header .letrasLogo :nth-child(1){
+        left: -22.8px;
+    }
+    header .letrasLogo :nth-child(2){
+        right: 22.5px;
+    }    
+    h5 {      
+         margin-left: 82%;  
+         top: 16.7%;    
+    }  
+    .boxBusqueda .icon-inspect{
+        opacity: 0;
+    }
+    .separation p {        
+        font-size: 15px;           
+    }  
+    .col-4 {
+        flex-basis: 100%;
+    }   
+    .col-2 {
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+    .col-2 img {
+        max-width: 100%;
+        padding: 50px 0px;
+    }
+    .select {
+        width: 65%;
+        left: 14%;
+    }
+
+    .select div {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;    
+        padding: 0px; 
+        border: 0.0001px solid #f8f8f8f6;  
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);   
+        position: relative;
+        margin: 5px auto;
+    }
+
+    .select div img {
+        position: relative; 
+        top: -45px;
+        left: 20%;
+        width: 100px;
+        height: 50%;
+    }
+
+    .select div p {    
+        position: absolute;
+        font-size: 15px;
+        /* top: 135px; */
+        /* left: 0%;     */
+        color: black;
+        font-family:'fontCofe';
+    }
+    .select div b{
+        top: 70%;
+    }
+    .select div strong{
+        left: 84%;
+    }   
+
+    .select div h6{    
+        position: absolute;
+        font-size: 15px;  
+        top: 55%;
+        left: 0%;    
+        color: black;
+        font-family:'fontCofe';
+    }
+
+    .select div h4{
+        opacity: 0;
+    }
+
+    .select div p {
+        top: 70%;
+        left: 4.5%;
+    }
+    .select div strong{
+        left: 85%;
+    }
+
+    .select div button {
+        position: absolute;   
+        top: 80%;
+        left: 35%;   
+        background: #2c4295;
+        color: white;
+        padding: 4px;
+        cursor: pointer;
+    }
+
+    .select div button :focus {
+        background: #2c4295;    
+    }
+    #contenedorLogo{
+        z-index: 5;
+    }
+    header .letrasLogo :nth-child(1) {
+       z-index: 11;
+    }
+    header .letrasLogo :nth-child(2) {
+        z-index: 11;
+    }
+
+    header nav #cardmenu{  
+        background: white; 
+        height: 215px;
+        z-index: 4;
+
+    }    
+    header nav #cardmenu ul li a{  
+        color: black;
+        font-size: 15px;
+    }        
+    .icon-cross{
+        position: absolute;
+        display: flex;
+        top: 10px;
+        margin-left: 83%;    
+        font-family: 'icomoon'; 
+        font-size: 22px;
+        color: #8a8a8a; 
+        cursor: pointer; 
+    }    
+    .icon-cross:hover{
+       color: black;
+       transition: all 0.5s;      
+    }   
+}
+@media screen and (min-width: 360px){   
+    body{
+        background: #f8f8f8f6;
+    }  
+    #contenedorLogo{      
+        margin-left: 32.504px;       
+    }
+    header .letrasLogo :nth-child(1){
+        left: -2px;
+    }
+    header .letrasLogo :nth-child(2){
+        right: 2.5px;
+    }
+   .separation{
+       width: 80%;
+   }
+   .separation p {        
+       font-size: 22px;           
+   }         
+   .separationR p {        
+    font-size: 22px;          
+   }   
+   .col-4 {
+       flex-basis: 100%;
+   }     
+   .redesSociales{
+       display: none;
+   }     
+   .col-4 .Costo{          
+    height: 30px; 
+    width: 100%;
+   }      
+   .select{
+    width: 35%;
+    height: 250px;    
+    left: 45%;        
+   }
+   .select.display {
+    top: 100px;    
+   }
+    h5 {      
+        top: 16.7%;
+        margin-left: 82%;    
+    }
+    /*////////////////////////////////////////////////////////////////////////////////
+    //                           Css carrito overlay                               //
+    //////////////////////////////////////////////////////////////////////////////*/
+    .select {
+        width: 50%;
+        left: 30%;
+    }
+
+    .select div {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;    
+        padding: 0px; 
+        border: 0.0001px solid #f8f8f8f6;  
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);   
+        position: relative;
+        margin: 5px auto;
+    }
+
+    .select div img {
+        position: relative; 
+        top: -45px;
+        left: 20%;
+        width: 100px;
+        height: 50%;
+    }
+
+    .select div p {    
+        position: absolute;
+        font-size: 15px;
+        top: 135px;
+        left: 0%;    
+        color: black;
+        font-family:'fontCofe';
+    }
+    .select div p {
+        top: 70%;
+        left: 4%;
+    }
+    .select div strong{
+        left: 85%;
+    }
+
+    .select div h6{    
+        position: absolute;
+        font-size: 15px;
+        top: 55%;
+        left: 0%;    
+        color: black;
+        font-family:'fontCofe';
+    }
+
+    .select div button {
+        position: absolute;   
+        top: 80%;
+        left: 35%;   
+        background: #2c4295;
+        color: white;
+        padding: 4px;
+        cursor: pointer;
+    }
+
+    .select div button :focus {
+        background: #2c4295;    
+    }
+
+    .icon-cross{
+        position: absolute;
+        display: flex;
+        top: 10px;
+        margin-left: 80%;    
+        font-family: 'icomoon'; 
+        font-size: 22px;
+        color: #8a8a8a; 
+        cursor: pointer; 
+    }
+
+    .icon-cross:hover{
+       color: black;
+       transition: all 0.5s;
+      
+    }
+}
+
+@media screen and (min-width: 480px){    
+    body{
+        background: #f8f8f8f6;
+    }   
+    header #Carrito {
+        margin-left: 88%;
+    }
+    .separation{             
+        width:  75%;                          
+    }       
+    .separation p {                      
+        font-size: 26px;         
+    }  
+    .separationR p {                      
+        font-size: 26px;         
+    }  
+    .col-4 {
+        flex-basis: 100%;
+    }     
+    .redesSociales{
+        display: none;
+    }  
+    .col-4 .Costo{          
+        height: 30px; 
+        width: 100%;
+    }     
+    .Costo :nth-child(2){
+        margin-left: 12%;   
+    } 
+    h5 {      
+        top: 16.8%;
+        margin-left: 88%;    
+    }
+    .boxBusqueda .icon-inspect{
+        opacity: 0;
+    }
+     /*////////////////////////////////////////////////////////////////////////////////
+    //                           Css carrito overlay                               //
+    //////////////////////////////////////////////////////////////////////////////*/
+    .select{
+        width: 50%;
+        height: 250px;
+        padding: 0%;
+        background: #f8f8f8f6; /*#f8f8f8f6*/
+        border: 1px solid #b5b5b5;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  
+        position: fixed;
+        top:  -1000px;
+        left: 30%;
+        transition: 0.5s;
+        overflow-y: auto;
+        margin: auto;
+        z-index: 99999;
+    }
+    .select.display {
+        top: 95px;    
+    }
+    .select div {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;    
+        padding: 0px;
+        border: 0.0001px solid #f8f8f8f6;  
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);   
+        position: relative;
+        margin: 5px auto;
+    }
+    .select div img {
+        position: relative; 
+        top: -22%;
+        left: 28%;
+        width: 100px;
+        height: 50%;
+    }
+    .select div p {    
+        position: absolute;
+        font-size: 15px;
+        top: 65%;
+        left: 0%;    
+        color: black;
+        font-family:'fontCofe';
+    }
+    .select div p {
+        top: 70%;
+        left: 4%;
+    }    
+    .select div strong{
+        left: 85%;
+    }
+    .select div h6{    
+        position: absolute;
+        font-size: 15px;
+        top: 55%;
+        left: 0%;    
+        color: black;
+        font-family:'fontCofe';
+    }
+    .select div h4{    
+        opacity: 0;
+    }
+    .select div button {
+        position: absolute;   
+        top: 80%;
+        left: 35%;   
+        background: #2c4295;
+        color: white;
+        padding: 4px;
+        cursor: pointer;
+    }
+    .select div button :focus {
+        background: #2c4295;    
+    }
+    .icon-cross{
+        position: absolute;
+        display: flex;
+        margin-left: 85%;    
+        font-family: 'icomoon'; 
+        font-size: 22px;
+        color: #8a8a8a; 
+        cursor: pointer; 
+    }
+        
+    }
+@media screen and (min-width: 600px){        
+        body{
+            background: #f8f8f8f6;
+        } 
+        .separationR {
+            font-size: 26px;
+        }
+        .row{
+            text-align: left;
+        }   
+        .col-4 {
+            flex-basis: 50%;
+        }           
+        .redesSociales{
+            display: none;
+        }    
+        .Costo :nth-child(2){
+            margin-left: 18%;   
+        }    
+        h5 {      
+            margin-left: 88%;    
+        }      
+        .boxBusqueda .icon-inspect{         
+            opacity: 1;
+            padding-left: 3px;
+        }
+         /*///////////////////////////////////////////////////////////////////////////////    
+        //                              Carrito Overly MediaQuery                      //
+        ///////////////////////////////////////////////////////////////////////////////*/
+        .select{
+            width: 55%;           
+            left: 32%;            
+        }
+        .select.display {
+            top: 93px;    
+        }     
+        .select div img {            
+            position: relative; 
+            top: 0%;
+            left: 0%;            
+            width: 175px;
+            height: 100%;
+        } 
+        .select div p {                
+            font-size: 20px;
+            top: 46%;
+            left: 55%;   
+        }    
+        .select div b {
+            font-size: 20px;
+            top: 46%;
+            margin-left: 51%;
+        }    
+        .select div strong{
+            left: 86%;
+        }    
+        .select div h6{    
+            position: absolute;
+            font-size: 15px;
+            top: 14%;
+            left: 55%;
+        }
+        .select div h4{    
+            position: absolute;
+            font-size: 15px;
+            top: 5%;
+            left: 67%;
+            color: #8a8a8a;
+            opacity: 1;
+        }
+        .select div button {      
+            top: 80%;
+            left: 65%;  
+        }        
+        .icon-cross{            
+            top: 45%;           
+        }   
+        
+    }
+@media screen and (min-width: 767px){        
+        body{
+           background: #f8f8f8f6;
+        }
+        header nav{        
+            position: absolute;            
+            display: inline-block;   
+            vertical-align: middle;         
+            width: 55%;
+            height: 35px;
+            margin-left: 32%;
+            top: 0px;            
+        }        
+        header nav #showMenu span,
+        header nav #hideMenu span {       
+            display: none;
+        }  
+        header nav #cardmenu{  
+            background: none;                    
+            display: inline-block;
+            border: none;            
+            height: 22px;
+            position: relative;            
+            top: -28px;
+            width: 100%;            
+            padding: 0px;
+            margin-left: 0%;
+        }    
+        header nav #cardmenu ul{                       
+            position: absolute;
+            padding: 0px 0px 0px 0px;
+            margin: 0px;  
+            width: 100%;
+            text-align: left;                       
+        }
+        header nav #cardmenu ul li{    
+            position: relative;                                      
+            display: inline-block;            
+            font-size: 16px;
+            margin: 0px 10px 0px 0px;            
+            margin-top: 17px;
+        }             
+        header nav #cardmenu ul li a:hover{
+            border-bottom: 4px solid #F1A600;
+        }    
+        header nav #cardmenu ul li a {
+            color: white;
+            font-size: large;
+        }    
+        header #Usuario,       
+        header #Busqueda
+        {
+            position: absolute;
+            text-align: center;
+            width: 45px;
+            height: 45px;    
+            cursor: pointer;   
+            margin: 5px 15px;
+            z-index: 9999;
+            overflow: hidden;
+            top: 15px; 
+        }
+        header #Busqueda{   
+            top: -8px;
+            margin-left: 84%;                
+        }
+        header #Usuario{
+            top: -8px;
+            margin-left: 90%;            
+        }    
+        header #Carrito{        
+            top: 14%;
+            margin-left: 88%;
+            width: 115px;
+            max-height: 42px;
+            position: fixed;
+            background: white;         
+            z-index: 1;            
+        }  
+        header #Carrito span{     
+            color: #2c4295;
+            display: flex;  
+            margin-top: -5%; 
+            padding: 12px 10px;   
+            font-size: 30px;
+        }
+        .redesSociales{
+            display: none;
+        } 
+        .col-4 {
+            flex-basis: 33.3333%;
+        }    
+        .Costo :nth-child(2){
+            margin-left: 22%;   
+        } 
+        h5 {      
+            top: 14.6%;    
+        }
+        .boxBusqueda .icon-inspect{
+            display: revert;
+            padding-left: 8px;
+        }
+        /*///////////////////////////////////////////////////////////////////////////////    
+        //                              Carrito Overly MediaQuery                      //
+        ///////////////////////////////////////////////////////////////////////////////*/
+        .select{
+            width: 45%;           
+            left: 42%; 
+            top: -1000px;           
+        }
+        .select .display {
+            top: 85px;    
+        }     
+        .select div img {            
+            position: relative; 
+            top: 0%;
+            left: 0%;            
+            width: 175px;
+            height: 100%;
+        } 
+        .select div p {                
+            font-size: 18px;
+            top: 46%;
+            left: 55%;   
+        }
+        .select div b {
+            font-size: 20px;
+            top: 45%;
+            margin-left: 51%;
+        }    
+        .select div strong{
+            left: 86%;
+        }        
+        .select div h6{    
+            position: absolute;
+            font-size: 15px;
+            top: 14%;
+            left: 55%;
+        }
+        .select div h4{    
+            position: absolute;
+            font-size: 15px;   
+            top: 2%;
+            left: 65%;  
+            color: #8a8a8a;   
+        }
+        .select div button {      
+            top: 80%;
+            left: 65%; 
+            border: 0px; 
+        }        
+        .icon-cross{            
+            top: 45%;           
+        }
+    }
+@media screen and (min-width: 950px){       
+        body{
+            background: #f8f8f8f6;
+        }
+        header nav{            
+            position: absolute;            
+            display: inline-block;   
+            vertical-align: middle;         
+            width: 55%;
+            height: 35px;
+            margin-left: 25%;
+            top: 0px;
+        }        
+        header nav #showMenu span,
+        header nav #hideMenu span {       
+            display: none;
+        }  
+        header nav #cardmenu{       
+            display: inline-block;
+            border: none;            
+            height: 22px;
+            position: relative;            
+            top: -28px;
+            width: 100%;
+            text-align: center;            
+            padding: 0px;
+            margin-left: 0%;  
+        }
+        header nav #cardmenu ul{  
+            text-align: left;  
+            position: absolute;
+            padding: 0px 27px; 
+        }
+        header nav #cardmenu ul li{ 
+               
+            position: relative; 
+            display: inline-block;            
+            font-size: 18px;
+            margin: 0px 13px 0px 0px; 
+            margin-top: 19px;
+            margin-left: 0%;
+        }
+        header nav #cardmenu ul li a:hover{ 
+            border-bottom: 4px solid #F1A600;
+        }    
+        header #Usuario,       
+        header #Busqueda
+        {
+            position: absolute;
+            text-align: center;
+            width: 45px;
+            height: 45px;    
+            cursor: pointer;   
+            margin: 5px 15px;
+            z-index: 9999;
+            overflow: hidden;
+            top: 15px; 
+        }
+        header #Busqueda{   
+            top: -8px;
+            margin-left: 70%;
+        }
+        header #Usuario{
+            top: -8px;
+            margin-left: 75%;            
+        }    
+        .redesSociales{  
+            overflow: hidden;
+            display: inline-block;
+            position: absolute;            
+            width: 170px;
+            top: 2px;
+            margin-left: 101%;
+        }
+        .redesSociales > *{  
+            overflow: hidden; 
+            font-size:  16px;
+            position: relative;
+            display: inline-block;            
+            text-decoration: none;  
+            list-style-type: none;
+            line-height: 35px;
+            margin-right: 5px;              
+        }
+        .redesSociales span {
+            color: white;
+        }
+        .redesSociales span:hover {
+            color: #00A4C4;
+        }
+        .redesSociales a {
+            text-decoration: none;
+        }
+        .separation p {   
+            font-size: 22px;              
+        }   
+        .col-4 {
+            flex-basis: 25%;
+        }     
+        .contenedorOfertasEspeciales{          
+            max-width: 10800px;
+            margin: auto;
+        }  
+        header #Carrito{        
+            top: 14%;
+            margin-left: 94%;
+            width: 115px;
+            max-height: 42px;
+            position: fixed;
+            background: white;           
+            z-index: 1;            
+        }   
+        header #Carrito span{     
+            color: #2c4295;
+            display: flex;  
+            margin-top: -5%; 
+            padding: 12px 10px;   
+            font-size: 30px;
+        }  
+        h5 {      
+            margin-left: 94%;       
+        }  
+        .boxBusqueda .icon-inspect{
+            display: revert;
+            padding-left: 15px;
+        }
+        /*////////////////////////////////////////////////////////////////////////////////
+        //                                  CARITO OVERLAY                             //
+        ///////////////////////////////////////////////////////////////////////////////*/
+        .select{
+            width: 35%;
+            height: 250px;
+            padding: 0%;
+            background: #f8f8f8f6; /*#f8f8f8f6*/
+            border: 1px solid #b5b5b5;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  
+            position: fixed;
+            top:  -1000px;
+            left: 58%;
+            transition: 0.5s;
+            overflow-y: auto;
+            margin: auto;
+            z-index: 99999;
+        }
+        .select.display {
+            top: 100px;  
+            left: 42%;
+            width: 50%;  
+        }
+        .select div {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;    
+            padding: 0px; /*5px*/
+            border: 0.0001px solid #f8f8f8f6;  
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);   
+            position: relative;
+            margin: 5px auto;
+        }
+        .select div img {            
+            position: relative; 
+            top: 0%;
+            left: 0%;            
+            width: 200px;
+            height: 100%;
+        }
+        .select div b {
+            font-size: 25px;
+            top: 43%;
+            margin-left: 52%;
+        }    
+        .select div strong{
+            left: 86%;
+        }  
+        .select div p {    
+            position: absolute;
+            font-size: 25px;
+            top: 43%;
+            left: 55%;    
+            color: black;
+            font-family:'fontCofe';
+        }
+        .select div h6{    
+            position: absolute;
+            font-size: 18px;
+            top: 14%;
+            left: 55%;    
+            color: black;
+            font-family:'fontCofe';
+        }
+        .select div button {
+            position: absolute;   
+            top: 80%;
+            left: 60%;   
+            background: #2c4295;
+            color: white;
+            padding: 4px;
+            cursor: pointer;
+        }        
+        .icon-cross{            
+            top: 45%;           
+        }        
+    }
+    @media screen and (min-width: 1024px){  
+        body{
+            background: #f8f8f8f6; 
+        }
+        header nav{            
+            position: absolute;            
+            display: inline-block;   
+            vertical-align: middle;         
+            width: 55%;
+            height: 35px;
+            margin-left: 25%;
+            top: 0px;
+        }        
+        header nav #showMenu span,
+        header nav #hideMenu span {       
+            display: none;
+        }  
+        header nav #cardmenu{       
+            display: inline-block;
+            border: none;            
+            height: 22px;
+            position: relative;            
+            top: -28px;
+            width: 100%;
+            text-align: center;            
+            padding: 0px;
+            margin-left: 0%;  
+        }
+        header nav #cardmenu ul{  
+            text-align: left;  
+            position: absolute;
+            padding: 0px 0px; 
+        }
+        header nav #cardmenu ul li{ 
+               
+            position: relative; 
+            display: inline-block;            
+            font-size: 18px;
+            margin: 0px 28px 0px 0px; 
+            margin-top: 19px;
+            margin-left: 0%;
+        }
+        header nav #cardmenu ul li a:hover{ 
+            border-bottom: 4px solid #F1A600;
+        }    
+        header #Usuario,       
+        header #Busqueda
+        {
+            position: absolute;
+            text-align: center;
+            width: 45px;
+            height: 45px;    
+            cursor: pointer;   
+            margin: 5px 15px;
+            z-index: 9999;
+            overflow: hidden;
+            top: 15px; 
+        }
+        header #Busqueda{   
+            top: -8px;
+            margin-left: 70%;
+        }
+        header #Usuario{
+            top: -8px;
+            margin-left: 75%;            
+        }    
+        .redesSociales{  
+            overflow: hidden;
+            display: inline-block;
+            position: absolute;            
+            width: 170px;
+            top: 2px;
+            margin-left: 101%;
+        }
+        .redesSociales > *{  
+            overflow: hidden; 
+            font-size:  16px;
+            position: relative;
+            display: inline-block;            
+            text-decoration: none;  
+            list-style-type: none;
+            line-height: 35px;
+            margin-right: 5px;              
+        }
+        .redesSociales span {
+            color: white;
+        }
+        .redesSociales span:hover {
+            color: #00A4C4;
+        }
+        .redesSociales a {
+            text-decoration: none;
+        }
+        .separation p {   
+            font-size: 22px;              
+        }   
+        .select div b {
+            font-size: 25px;
+            top: 43%;
+            margin-left: 52%;
+        }    
+        .select div strong{
+            left: 86%;
+        }  
+        .col-4 {
+            flex-basis: 25%;
+        }     
+        .contenedorOfertasEspeciales{          
+            max-width: 10800px;
+            margin: auto;
+        }  
+        header #Carrito{        
+            top: 14%;
+            margin-left: 94%;
+            width: 115px;
+            max-height: 42px;
+            position: fixed;
+            background: white;           
+            z-index: 1;            
+        }   
+        header #Carrito span{     
+            color: #2c4295;
+            display: flex;  
+            margin-top: -5%; 
+            padding: 12px 10px;   
+            font-size: 30px;
+        }  
+        h5 {      
+            margin-left: 94%;     
+            /* top: 115px;   */
+        }  
+
+    }      
+    @media screen and (min-width: 1281px){   
+        header nav #cardmenu ul li{                
+            position: relative; 
+            display: inline-block;            
+            font-size: 18px;
+            margin: 0px 72px 0px 0px; 
+            margin-top: 19px;
+            margin-left: 0%;
+        }
+        .col-2 {
+            flex-basis: 50%;
+            min-width: 325px;
+        }
+        .col-2 img {
+            max-width: 75%;
+            padding: 50px 0px;
+        }  
+        .select.display {
+            top: 100px;   
+            left: 58%;
+            width: 35%;
+        }
+    }

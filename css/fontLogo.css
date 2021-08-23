@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'fontLogo';
+  src:  url('/media/fontsNoe/NoeFont.otf') format('OpenType'); 
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

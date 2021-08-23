@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagos Animales de Noe</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- library validate -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="/css/pago.css">
+</head>
+<body>
+
+<h2>ANIMALES DE NOE</h2>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form id="validate" action="/action_page.php">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>2. ENVÍO</h3>
+                        <label>
+                            <input type="radio" checked="checked" name="tipoDePersona"> Persona Natural
+                            <input type="radio" checked="checked" name="tipoDePersona"> Persona Juricica / Empresa
+                        </label>
+                        <label for="fname"> Nombre *</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Primer Nombre" required>
+
+                        <label for="Apellido"> Apellido *</label>
+                        <input type="text" id="Apellido" name="fullname2" placeholder="Apellidos" required>
+
+                        <label for="tipoDeDocumento" id = "tipoDeDocumento"> Tipo de documento *</label>
+                        <select name="tipoDeDocumento">
+
+                            <option value="CC">(CC) Cédula de ciudadania</option>
+
+                            <option value="ISO">(ISO) Descripción</option>                                                      
+                            
+                            <option value="CE">(CE) Cédula de extranjería</option>
+                            
+                            <option value="TI">(TI) Tarjeta de identidad</option>
+
+                            <option value="PP">(PP) Pasaporte</option>
+
+                            <option value="DE">(DE) Documento de identificacion extranjero</option>
+                            
+                        </select>
+                       
+
+                        <label for="documento"> Documento *</label>
+                        <input type="text" id="NumeroDocumento" name="Documento" placeholder="1234567891" required>
+
+                        <label for="celular"> Celular *</label>                        
+                        <input type="text" id="celular" name="celular" placeholder="3101234567" required>
+                       
+
+                        <label for="email"> Email *</label>                        
+                        <input type="text" id="email" name="email" placeholder="SuCorreo@gmail.com" required>
+                        
+                        <label for="Dirección"> Dirección *</label>
+                        <input type="text" id="Dirección" name="Dirección" placeholder="calle 42b# 63c- 85" required>
+
+                        <label for="Direcciónadd"> Datos adicionales(Opcional) *</label>
+                        <input type="text" id="Direcciónadd" name="Direcciónadd" placeholder="apartamento 506">
+
+                        <label for="Ciudad"> Ciudad *</label>
+                        <select class="form-control" id="inputCiudadLine1">
+                            <option value="">-</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Bucaramanga">Bucaramanga</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Cúcuta">Cúcuta</option>
+                            <option value="Florencia">Florencia</option>
+                            <option value="Ibagué">Ibagué</option>
+                            <option value="Leticia">Leticia</option>
+                            <option value="Manizales">Manizales</option>
+                            <option value="Medellín">Medellín</option>
+                            <option value="Mitú">Mitú</option>
+                            <option value="Mocoa">Mocoa</option>
+                            <option value="Montería">Montería</option>
+                            <option value="Neiva">Neiva</option>
+                            <option value="Pasto">Pasto</option>
+                            <option value="Pereira">Pereira</option>
+                            <option value="Popayán">Popayán</option>
+                            <option value="Puerto Carreño">Puerto Carreño</option>
+                            <option value="Puerto Inírida">Puerto Inírida</option>
+                            <option value="Quibdó">Quibdó</option>
+                            <option value="Riohacha">Riohacha</option>
+                            <option value="San Andrés">San Andrés</option>
+                            <option value="San José del Guaviare">San José del Guaviare</option>
+                            <option value="Santa Marta">Santa Marta</option>
+                            <option value="Sincelejo">Sincelejo</option>
+                            <option value="Tunja">Tunja</option>
+                            <option value="Valledupar">Valledupar</option>
+                            <option value="Villavicencio">Villavicencio</option>
+                            <option value="Yopal">Yopal</option>
+                        </select>
+                        <label for="Departamento"> Departamento *</label>
+                        <select class="form-control" id="inputCiudadLine2">
+                            <option value="">-</option>
+                            <option value="Antioquia">Antioquia</option>                           
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Atlántico">Atlántico</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Boyacá">Boyacá</option>
+                            <option value="Caldas">Caldas</option>
+                            <option value="Caquetá">Caquetá</option>
+                            <option value="Casanare">Casanare</option>
+                            <option value="Cauca">Cauca</option>
+                            <option value="Cesar">Cesar</option>
+                            <option value="Chocó">Chocó</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cundinamarca">Cundinamarca</option>
+                            <option value="Guainía">Guainía</option>
+                            <option value="Guaviare">Guaviare</option>
+                            <option value="Huila">Huila</option>
+                            <option value="La Guajira">La Guajira</option>
+                            <option value="Magdalena">Magdalena</option>
+                            <option value="Meta">Meta</option>
+                            <option value="Nariño">Nariño</option>
+                            <option value="Norte de Santander">Norte de Santander</option>
+                            <option value="Putumayo">Putumayo</option>
+                            <option value="Quindío">Quindío</option>
+                            <option value="Risaralda">Risaralda</option>
+                            <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Sucre">Sucre</option>
+                            <option value="Tolima">Tolima</option>
+                            <option value="Valle del Cauca">Valle del Cauca</option>
+                            <option value="Vaupés">Vaupés</option>
+                            <option value="Vichada">Vichada</option>
+                        </select>
+                        <div class="row">                            
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>1.PAGO</h3>
+                        <label for="Tarjetas">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+
+                        <label for="tnombre">Nombre titular como aparece en la tarjeta *</label>
+                        <input type="text" id="tnombre" name="tnombre" placeholder="Juan Pedro"required>
+                        <label for="tnumero">Número de Tarjeta *</label>
+                        <input type="text" id="tnumero" name="tnumero" placeholder="1111-2222-3333-4444"required>
+                        <label for="expmonth">Fecha Expiración *</label>
+                        <input type="text" id="expmes" name="expmes" placeholder="09-mes"required>
+                        <input type="text" id="expano" name="expano" placeholder="2020-año"required>
+                        <div class="row">                            
+                            <div class="col-50">
+                                <label for="cvv">Código de Seguridad *</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352"required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label for="EnviosPago">
+                <input type="checkbox" checked="checked" name="sameadr"> Envío(3 días hábiles) $16.000
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="col-25">
+        <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="#">CHUNKY POLLO</a> <span class="price">$1500</span></p>
+            <p><a href="#">CHUMKY DINOSAURIO</a> <span class="price">$1500</span></p>
+            <p><a href="#">CHUNKY GODZILLA</a> <span class="price">$1400</span></p>
+            <p><a href="#">CHUNKY SALMON</a> <span class="price">$1200</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$12600</b></span></p>
+        </div>
+    </div>
+</div>
+<!-- validar los campos en js -->
+<script>
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            fullname2: {
+                required: true,
+            },
+            Documento:{
+                required:true,
+            },
+            email: {
+                required: true,
+            },
+            Dirección: {
+                required: true,
+            },
+            Direcciónadd: {
+                required: true,
+            },
+            city: {
+                required: true,
+            },
+            state: {
+                required: true,
+            },
+            zip: {
+                required: true,
+            },
+            tnombre: {
+                required: true,
+            },
+            tnumero: {
+                required: true,
+            },
+            expmes: {
+                required: true,
+            },
+            expano: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },           
+           
+        },
+        messages: {
+            fullname:"Porfavor llenar nombre*",
+            fullname2:"Porfavor llenar apellido*",
+            email:"Porfavor llenar el email*",
+            ciudad:"Porfavor seleccionar ciudad*",
+            Dirección:"Porfavor llenar Direccion*",
+            Direcciónadd:"Porfavor llenar Direccion*",
+            state:"Porfavor escoger Departamento*",            
+            tnombre:"Porfavor ingresar nombre del titular*",
+            tnumero:"Porfavor ingresar numero de la tarjeta*",
+            expmes:"Porfavor ingresar fecha de expiración*",
+            expyano:"Porfavor ingresar año de expiración*",
+            cvv:"Porfavor ingresar codigo de seguridad*",
+        },        
+    });
+    if ($("#tipoDeDocumento").val() === "") {  //Esto es para validar si los campos estan llenos o no de los select, se llaman por el id
+            messages: {
+                tipoDeDocumento:"Porfavor seleccione tipo de documento*";
+                
+            }                // ..
+       } 
+</script>
+</body>
+</html>
