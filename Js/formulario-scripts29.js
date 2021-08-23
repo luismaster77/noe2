@@ -449,7 +449,7 @@ formularioPago.addEventListener('submit',function(e){
         method:'POST',
         body:datos
     })
-    .then(res => res.json())
+    .then(res => res)
     .then(data => {
         console.log(data);
     })
