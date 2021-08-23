@@ -159,6 +159,7 @@ include 'inc/funciones/funciones.php';
                         </div>
                     </div>
                     <input type="submit" value="Pagar" class="btn">
+                    <a href="pago-comercio.php">Pagar v2</a>
                 </form >
             </div>
         </div>
